@@ -1,0 +1,26 @@
+{
+  "name": "labth",
+  "version": "1.0.0",
+  "description": "Labyrinth game server on nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "game",
+    "server",
+    "multiplayer",
+    "mooze"
+  ],
+  "author": "Natalia Duplij",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "index": "^0.4.0",
+    "lab-labth": "file:lab-labth",
+    "lab-mysql": "file:lab-mysql",
+    "lab-player": "file:lab-player",
+    "lab-turn": "file:lab-turn",
+    "nodemon": "^2.0.4"
+  }
+}

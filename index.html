@@ -1,0 +1,133 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Lab AJAX</title>
+	<script src="/js/jquery-1.11.1.min.js"></script>
+	<script src="/js/labAjax.js"></script>
+</head>
+
+<body>
+
+<form method=post>
+</form>
+
+<form id = "gamesToJoin" method=post>
+<input id = "NewButton" type="submit" name="New" value="New game">
+<table id = "testTable"><tbody>
+</tbody></table>
+</form>
+
+<form method=post>
+<table>
+<tr>
+	<td><b>Your nickname:</b></td>
+	<td><input type="text" name="nickname" size=10 value=""></td>
+</tr>
+<tr>
+	<td><b>Xmax:</b></td>
+	<td><input type="text" name="Xmax" size=10 value="5"></td>
+</tr>
+<tr>
+	<td><b>Ymax:</b></td>
+	<td><input type="text" name="Ymax" size=10 value="5"></td>
+</tr>
+<tr>
+	<td><b>minRiverLengthIndex:</b></td>
+	<td><input type="text" name="minRiverLengthIndex" size=10 value="5"></td>
+</tr>
+<tr>
+	<td><b>maxRiverLengthIndex:</b></td>
+	<td><input type="text" name="maxRiverLengthIndex" size=10 value="3"></td>
+</tr>
+<tr>
+	<td><b>allThingsTogether:</b></td>
+	<td><input type="checkbox" name="allThingsTogether"></td>
+</tr>
+<!-- <tr>
+	<td><b>showMap:</b></td>
+	<td><input type="checkbox" name="showMap"></td>
+</tr> -->
+<tr><td colspan=2>
+<input id = "GenerateButton" type="submit" name="Generate" value="Generate">
+</td></tr>
+</table>
+</form>
+
+<form method=post>
+<!-- <input type="hidden" name="game_id" value="game_id"> -->
+<table>
+<tr>
+	<td><b>Your nickname:</b></td>
+	<td><input type="text" name="nickname" size=10 value=""></td>
+</tr>
+<tr><td colspan=2>
+<input  id="NewPlayerButton" type="submit" name="NewPlayer" value="Join the game">
+</td></tr>
+</table>
+</form>
+
+<form class="refreshClass" id="StartForm" method=post>
+	<input id="RefreshButton" type="submit" name="Refresh" value="Refresh">
+	<input id="StartButton" type="submit" name="Start" value="Start the game">
+</form>
+
+<form class="refreshClass" id="RefreshForm" method=post>
+	<input class="refreshButton" id="RefreshButton" type="submit" name="Refresh" value="Refresh">
+</form>
+
+<form class="refreshClass" id="TurnForm" method=post>
+<table>
+<tr>
+	<td>
+<input type="radio" id="bum" name="action" value="bum" title="Bum"><label for="bum">B</label>
+	</td><td>
+<input class="turnButton" id="North-submit" type="submit" name="North" value="&uarr;">
+	</td><td>
+<input type="radio" id="shoot" name="action" value="shoot" title="Shoot"><label for="shoot">S</label>
+	</td>
+</tr>
+<tr>
+	<td>
+<input class="turnButton" id="West-submit" type="submit" name="West" value="&larr;">
+	</td><td>
+<input class="turnButton" id="center-submit" type="submit" name="Center" value="&#9931;">
+	</td><td>
+<input class="turnButton" id="East-submit" type="submit" name="East" value="&rarr;">
+	</td>
+</tr>
+<tr>
+	<td>
+<input type="radio" id="cement" name="action" value="cement" title="cement"><label for="Cement">C</label>
+	</td><td>
+<input class="turnButton" id="South-submit" type="submit" name="South" value="&darr;">
+	</td><td>
+<input type="radio" id="move" name="action" value="move" title="Move" checked="checked"><label for="move">M</label>
+	</td>
+</tr>
+<tr>
+	<td colspan=3>
+<input id="RefreshButton" type="submit" name="Refresh" value="Refresh">
+	</td>
+</tr>
+</table>
+</form>
+
+
+<div id = "textAnswer">
+</div>
+
+<div id = "inventory">
+	<ul id = "inventorytList">
+	</ul>
+</div>
+
+<div id = "turns">
+	<ul id = "turntList">
+	</ul>
+</div>
+<div id = "anwerBlock"></div>
+
+</body>
+</html>
