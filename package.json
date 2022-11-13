@@ -21,6 +21,6 @@
     "lab-mysql": "file:lab-mysql",
     "lab-player": "file:lab-player",
     "lab-turn": "file:lab-turn",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.20"
   }
 }
